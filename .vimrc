@@ -8,6 +8,7 @@ filetype on
 filetype plugin on
 filetype indent on
 
+set paste
 syntax on
 set fileencodings=utf-8,gb18030,gbk,gb2312,big5
 set nocompatible
