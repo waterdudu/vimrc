@@ -1,3 +1,162 @@
+[core]
+    editor = vim
+[http]
+    postBuffer = 524288000
+[diff]
+    tool = vimdiff
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path = 
+[mergetool "sourcetree"]
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
+[alias]
+    s = status
+    sb = status -s -b
+    #############
+    sa = stash apply
+    sc = stash clear
+    sd = stash drop
+    sl = stash list
+    sp = stash pop
+    ss = stash save
+    sw = stash show
+    #############
+    d = diff
+    dc = diff --cached
+    dl = difftool
+    dlc = difftool --cached
+    dk = diff --check
+    dp = diff --patience
+    dck = diff --cached --check
+    #############
+    c = commit
+    ca = commit -a
+    cm = commit -m
+    cem = commit --allow-empty -m
+    cam = commit -am
+    cd = commit --amend
+    cad = commit -a --amend
+    #############
+    a = add .
+    ai = add -i
+    #############
+    ap = apply
+    as = apply --stat
+    ac = apply --check
+    #############
+    ama = am --abort
+    amr = am --resolved
+    ams = am --skip
+    #############
+    l = log --oneline
+    lg = log --oneline --graph --decorate
+    #############
+    o = checkout
+    ob = checkout -b
+    #############
+    b = branch
+    ba = branch -a
+    bd = branch -d
+    br = branch -r
+    #############
+    f = fetch
+    fo = fetch origin
+    #############
+    fp = format-patch
+    #############
+    fk = fsck
+    #############
+    m = merge
+    ma = merge --abort
+    mc = merge --continue
+    ms = merge --skip
+    #############
+    pr = prune -v
+    #############
+    ps = push
+    psf = push -f
+    psu = push -u
+    pso = push origin
+    psao = push --all origin
+    psfo = push -f origin
+    psuo = push -u origin
+    psom = push origin master
+    psfom = push -f origin master
+    psuom = push -u origin master
+    #############
+    pl = pull
+    plu = pull -u
+    plo = pull origin
+    plp = pull upstream
+    plom = pull origin master
+    plpm = pull upstream master
+    #############
+    pb = pull --rebase
+    pbo = pull --rebase origin
+    pbp = pull --rebase upstream
+    pbom = pull --rebase origin master
+    pbpm = pull --rebase upstream master
+    #############
+    rb = rebase
+    rba = rebase --abort
+    rbc = rebase --continue
+    rbi = rebase --interactive
+    rbs = rebase --skip
+    #############
+    re = reset
+    rh = reset HEAD
+    reh = reset --hard
+    rem = reset --mixed
+    res = reset --soft
+    rehh = reset --hard HEAD
+    remh = reset --mixed HEAD
+    resh = reset --soft HEAD
+    #############
+    r = remote
+    ra = remote add
+    rr = remote rm
+    rv = remote -v
+    rp = remote prune
+    rs = remote show
+    rao = remote add origin
+    rso = remote show origin
+    rpo = remote prune origin
+    #############
+    w = show
+    wp = show -p
+    wr = show -p --no-color
+    #############
+    ls = ls-files
+    lsf = "!git ls-files | grep -i"
+    #############
+    svnr = svn rebase
+    svnd = svn dcommit
+    svnl = svn log --oneline --show-commit
+
+#	fc   = fetch
+#	st   = status
+#	ci   = commit
+#	co   = checkout
+#	br   = branch
+#	gk   = gitk
+#	rs   = reset
+#	cp   = cherry-pick
+#	mg   = merge --no -ff
+#	cia  = commit -amend 
+#	sts  = stash
+#	pop  = stash pop
+#	rb   = rebase
+#	rv   = revert
+#	df   = diff
+#	cl   = clean
+#	rsh  = reset --hard
+#	cln  = clean -dfx
+#	stsl = stash list
+#	stsa = stash apply
+#	cob  = checkout -b
+#	rbi  = rebase -i
+#	sh  = show --color
 [color]
     diff = auto
     status = auto
@@ -11,3 +170,13 @@
     added = green bold
     changed = yellow bold
     untracked = red bold
+
+
+
+
+
+
+
+
+
+
